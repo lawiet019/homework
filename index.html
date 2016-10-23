@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset ="utf-8"/>
+<title>武汉大学主页</title>
+<style type="text/css">
+*{
+	margin:0px;
+	padding: 0px;
+	font-family: "微软雅黑";
+}
+html,body{
+	height: 100%;
+}
+.clear{
+	clear: both;
+}
+#wrapper{
+	width:100%;
+	float: right;
+	margin:0 0 0 -240px;
+}
+#left{
+	position: fixed;
+	width:240px;
+	background: none repeat scroll 0% 0% rgb(34, 34, 34);
+	float: left;
+	height: 100%;
+}
+#left_top{
+	text-align: center;
+	color: white;
+	font-size: 20px;
+}
+#logo{
+	width:160px;
+	height:160px;
+	margin:0px auto;
+	margin-top:50px;
+
+}
+#left ul{
+	width:240px;
+	color: white;
+	font-size: 18px;
+	margin-top: 30px;
+
+
+}
+#left li{
+	text-align: center;
+	list-style: none;
+	width:240px;
+	height:40px;
+	line-height: 40px;
+	border-bottom: 2px solid rgb(34, 34, 34);
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+#menu li{
+	list-style: none;
+	height: 40px;
+	line-height: 40px;
+	position: relative;
+	left:240px;
+	background: rgba(0,0,0,0.8);
+	top:-100px;
+	display: none;
+
+}
+#menu_fa:hover #menu li{
+	display: block;
+}
+#right{
+	margin-left: 240px;
+}
+#right_top{
+	background: #698B22;
+	height:60px;
+	line-height: 60px;
+	position: fixed;
+	width: 100%;
+}
+#inputBox{
+	width:180px;
+	margin-left: 30%;
+	float: left;
+}
+#right_top input{
+	height:30px;
+	border-radius:6px;
+}
+#icon1,#icon2,#icon3{
+	margin-left: 3%;
+	float: left;
+	width:150px;
+	color: white;
+}
+#banner ul li{
+	width:100%;
+	list-style: none;
+}
+#banner{
+	width:100%;
+	height:600px;
+	padding-top: 60px;
+}
+#banner ul{
+	width:100%;
+}
+#banner ul li img{
+	width:100%;
+	height:600px;
+	display: none;
+	
+}
+
+.show{
+	display: block!important;
+}
+.hide{
+	display: none;
+}
+.point{
+	width:20px;
+	height:20px;
+	border-radius: 10px;
+	display: inline-block;
+	margin-right: 20px;
+	background: white;
+}
+#textList li{
+	display: inline-block;
+	font-size: 30px;
+	height:60px;
+	line-height: 60px;
+	background: rgba(0,0,0,0.5);
+	color: white;
+	display: none;
+}
+#textList {
+	position: relative;
+	top:-60px;
+}
+.text{
+	float: right;
+}
+.green{
+	background: #008000!important;
+
+}
+
+#headline_top{
+	width:100%;
+	height:300px;
+	background:#cccccc;
+	text-align: center;
+	color: white;
+	font-size: 30px;
+}
+#headline_add{
+	width:100%;
+	height:60px;
+}
+#headline_ch{
+	border-bottom: 5px solid white;
+	width:70%;
+	padding-bottom: 20px;
+	margin:0 auto;
+}
+#headline_en{
+	margin-top: 20px;
+	width:100%;
+}
+#headline_content{
+	width:100%;
+	margin-top: 50px;
+}
+#content_inner{
+	width:80%;
+	margin:0 auto;
+}
+.news{
+	width:32%;
+	text-align: center;	
+	float: left;
+}
+.news_margin{
+	margin-right: 2%;
+}
+.news_img{
+	width:200px;
+	height:200px;
+	border-radius: 100px;
+
+}
+#other{
+	width:100%;
+	margin-top: 50px;
+}
+#other_inner{
+	width:80%;
+	margin:0 auto;
+	margin-top: 50px;
+}
+.other_part{
+	width:45%;
+	float: left;
+}
+.part_margin{
+	margin-right:10%;
+}
+.part_top{
+	width:100%;
+	height:60px;
+	border-radius: 5px;
+	color: white;
+	line-height: 60px;
+	text-align: center;
+	font-size: 24px;
+}
+#greenOne{
+	background: #C7E38C;
+}
+#greenTwo{
+	background: #AED75B;
+}
+#greenThree{
+	background: #92C12F;
+}
+#greenFour{
+	background: #6A8C22;
+}
+
+.list{
+	width:100%;
+	list-style: none;
+
+}
+.list li{
+	font-size: 18px;
+	line-height: 35px;
+	height: 35px;
+	text-align: center;
+}
+#bottom{
+	width: 100%;
+	height: 100px;
+	background: #cccccc;
+	color: white;
+}
+#bottom_left{
+	float: left;
+	width:50%;
+	padding-top: 20px;
+
+}
+#bottom_right{
+	float: right;
+	width: 50%;
+	padding-top: 30px;
+}
+#bottom_right span{
+	float: right;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+</style>
+</head>
+<body>
+<div id="wrapper">
+	<div id="left">
+		<div id="left_top">
+			<img src="./img/whu.png" id="logo" />
+			<p>武汉大学</p>
+			<p>WuHan University</p>
+		</div>
+		<ul>
+			<li id="menu_fa">
+				<a href="http://www.whu.edu.cn/xxgk/xxjj.htm">学校概况</a>
+				<ul  id="menu">
+					<li>学校简介</li>
+					<li>武大标示</li>
+					<li>武大百科</li>
+				</ul>
+
+			</li>
+			<li>机构设置</a></li>
+			<li>师资队伍</li>
+			<li>人才培养</li>
+			<li>科学研究</li>
+			<li>社会服务</li>
+			<li>交流合作</li>
+			<li>文化生活</li>
+		</ul>
+	</div>
+	
+	<div id="right">
+		<div id="right_top">
+			<div id="inputBox">
+				<input type="text" placeholder="搜索关键词" />
+			</div>
+			<div id="icon1">
+				<img src="./img/icon1.png"/>
+				信息门户
+			</div>
+			<div id="icon2">
+				<img src="./img/icon2.png"/>
+				邮件系统
+			</div>
+			<div id="icon3">
+				<img src="./img/icon3.png"/>
+				办公系统
+			</div>
+		</div>
+		<div id="banner">
+			<ul id="imgList">
+				<li><img src="./img/banner1.jpg" class="show"/></li>
+				<li><img src="./img/banner2.jpg"/></li>
+				<li><img src="./img/banner3.jpg"/></li>
+			</ul>
+			<ul id="textList">
+				<li class="show"><span class="point green"></span><span class="point"></span><span class="point"></span><span class="text">情系武大，让爱回珈</span></li>
+				<li><span class="point"></span><span class="point green"></span><span class="point"></span><span class="text">刘延东视察武汉大学</span></li>
+				<li><span class="point"></span><span class="point"></span><span class="point green"></span><span class="text">武大早期建筑——首批中国20世纪建筑遗产</span></li>
+			</ul>
+		</div>
+		<div id="headline">
+			<div id="headline_top">
+				<div id="headline_add">
+				</div>
+				<div id="headline_ch">
+					<h1>头条新闻</h1>
+				</div>
+				<div id="headline_en">
+					<h1>Headlines</h1>
+				</div>
+			</div>
+			<div id="headline_content">
+				<div id="content_inner">
+					<div class="news news_margin">
+						<div class="news_top">
+							<img class="news_img" src="./img/new2.jpg"/>
+						</div>
+						<div class="news_bottom">
+							<h3>六院士谈一流学科建设</h3>
+							<h4>李德仁、宁津生、刘经南、张祖勋、龚健雅、李建成院士畅谈测绘学科文化与一流学科建设。</h4>
+						</div>
+					</div>
+					<div class="news news_margin">
+						<div class="news_top">
+							<img class="news_img" src="./img/new3.jpg"/>
+						</div>
+						<div class="news_bottom">
+							<h3>【两学一做】落实基层党建重点</h3>
+							<h4>韩进要求，加强认识，履职尽责，促进学习教育“入脑”“入心”。</h4>
+						</div>
+					</div>
+					<div class="news">
+						<div class="news_top">
+							<img class="news_img" src="./img/new1.jpg"/>
+						</div>
+						<div class="news_bottom">
+							<h3>校党委中心组学习习近平治国理</h3>
+							<h4>人文社科资深教授胡德坤作辅导报告，介绍习近平外交大棋局.</h4>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="other">
+			<div id="other_inner">
+				<div class="other_part part_margin">
+					<div class="part_top" id="greenOne">珞珈新闻</div>
+					<ul class="list">
+						<li>三方共建“智谷”构建创新创造支撑平台</li>
+						<li>喻杉：两颗种子</li>
+						<li>教育部财务司来校调研</li>
+						<li>全国研究生移动终端应用设计创新大赛我校获一等奖</li>
+						<li>我校代表团赴欧洲招贤纳才</li>
+						<li>【思政课改革】不惧病魔录慕课</li>
+						<li>曼彻斯特城市大学校长来校洽谈合作</li>
+						<li>师生瞻仰名人档案</li>
+					</ul>
+				</div>
+				<div class="other_part">
+					<div class="part_top" id="greenTwo">学术动态</div>
+					<ul class="list">
+						<li>【测绘学科60年】李建成：锐意进取推动学科发展</li>
+						<li>国内外知名专家共探临床医学前沿问题</li>
+						<li>我校经济舆情研究工作获中宣部肯定</li>
+						<li>李崇淮诞辰百年纪念暨学术思想研讨会召开</li>
+						<li>我校牵头国家通航低空监视新技术研究</li>
+						<li>国内外顶级专家共话微生物研究前沿和走向</li>
+						<li>院士专家共探现代农业与绿色发展</li>
+						<li>人民医院年度科技论文总数跃居全国医疗机构第三</li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div id="other_inner">
+				<div class="other_part part_margin">
+					<div class="part_top" id="greenThree">通知公告</div>
+					<ul class="list">
+						<li>考察对象公示</li>
+						<li>任职公告</li>
+						<li>长江论坛第二讲预告</li>
+						<li>“国家治理现代化与公共政策创新”国际学术研讨会会议公告</li>
+						<li>珞珈讲坛第146讲预告</li>
+						<li>珞珈讲坛第147讲预告</li>
+						<li>武汉大学测绘学科60年发展回顾暨世界一流学科建设高端论坛公告（二号）</li>
+						<li>信息学部停电、停水告示</li>
+						<li>专题网站 TOPICS</li>
+					</ul>
+				</div>
+				<div class="other_part">
+					<div class="part_top" id="greenFour">专题网站</div>
+					<ul class="list">
+						<li>“两学一做”学习教育专题</li>
+						<li>2016网上校园开放日</li>
+						<li>武汉大学本科招生网</li>
+						<li>迎新网</li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div id="bottom">
+			<div id="bottom_left">
+				<p>Copyright武汉大学2014　地址：湖北省武汉市武昌区八一路299号　邮编：430072</p>
+				<p>鄂ICP备05003330鄂公网安备42010602000219</p>
+			</div>
+			<div id="bottom_right">
+				<span>联系我们</span><span>网站地图</span><span>信息中心</span>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="./jquery-2.2.1.min.js"></script>
+<script type="text/javascript">
+	
+	var curLength=0;
+	var length = $("#imgList").find("li").length;
+	var autoChange = setInterval(function(){
+		if(curLength==(length-1)){
+			curLength=0;
+		}
+		else{
+			curLength++;
+		}
+		changeDemo(curLength);
+
+	},3500)
+	function changeDemo(index){
+		$("#imgList").find("li").find("img").removeClass('show');
+		$("#imgList").find("li").eq(index).find("img").addClass('show');	
+		$("#textList").find("li").removeClass('show');
+		$("#textList").find("li").eq(index).addClass('show');	
+	}
+</script>
+</body>
+</html>

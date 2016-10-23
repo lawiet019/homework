@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset ="utf-8"/>
+<title>通知公告</title>
+<style type="text/css">
+*{
+	margin:0px;
+	padding: 0px;
+	font-family: "微软雅黑";
+}
+html,body{
+	height: 100%;
+}
+.clear{
+	clear: both;
+}
+#wrapper{
+	width:100%;
+	float: right;
+	margin:0 0 0 -240px;
+}
+#left{
+	position: fixed;
+	width:240px;
+	background: none repeat scroll 0% 0% rgb(34, 34, 34);
+	float: left;
+	height: 100%;
+}
+#left_top{
+	text-align: center;
+	color: white;
+	font-size: 20px;
+}
+#logo{
+	width:160px;
+	height:160px;
+	margin:0px auto;
+	margin-top:50px;
+
+}
+#left ul{
+	width:240px;
+	color: white;
+	font-size: 18px;
+	margin-top: 30px;
+
+
+}
+#left li{
+	text-align: center;
+	list-style: none;
+	width:240px;
+	height:40px;
+	line-height: 40px;
+	border-bottom: 2px solid rgb(34, 34, 34);
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+#menu li{
+	list-style: none;
+	height: 40px;
+	line-height: 40px;
+	position: relative;
+	left:240px;
+	background: rgba(0,0,0,0.8);
+	top:-100px;
+	display: none;
+
+}
+#menu_fa:hover #menu li{
+	display: block;
+}
+#right{
+	margin-left: 240px;
+	background: #cccccc;
+	padding-bottom: 30px;
+}
+#right_top{
+	background: #698B22;
+	height:60px;
+	line-height: 60px;
+	position: fixed;
+	width: 100%;
+}
+#inputBox{
+	width:180px;
+	margin-left: 30%;
+	float: left;
+}
+#right_top input{
+	height:30px;
+	border-radius:6px;
+}
+#icon1,#icon2,#icon3{
+	margin-left: 3%;
+	float: left;
+	width:150px;
+	color: white;
+}
+#gap{
+	width:100%;
+	height: 30px;
+	padding-top: 60px;
+}
+#right_content{
+	width:80%;
+	background: white;
+	margin:0 auto;
+	margin-bottom: 30px;
+	border-radius: 5px;
+}
+#content_inner{
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+#head{
+	height: 50px;
+	width: 200px;
+	border-radius: 5px;
+	background: #698B22;
+	line-height: 50px;
+	text-align: center;
+	font-size: 24px;
+	color: white;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+#right_content table{
+		width: 100%;
+		margin:20px auto;
+	}
+#right_content table tr{
+		height: 40px;
+	}
+#right_content table tr td{
+		text-align: center;
+	}
+#right_content table tr td:first-child{
+		text-align: left;
+	}
+</style>
+</head>
+<body>
+<div id="wrapper">
+	<div id="left">
+		<div id="left_top">
+			<img src="./img/whu.png" id="logo" />
+			<p>武汉大学</p>
+			<p>WuHan University</p>
+		</div>
+		<ul>
+			<li id="menu_fa">
+				<a href="http://www.whu.edu.cn/xxgk/xxjj.htm">学校概况</a>
+				<ul  id="menu">
+					<li>学校简介</li>
+					<li>武大标示</li>
+					<li>武大百科</li>
+				</ul>
+
+			</li>
+			<li>机构设置</a></li>
+			<li>师资队伍</li>
+			<li>人才培养</li>
+			<li>科学研究</li>
+			<li>社会服务</li>
+			<li>交流合作</li>
+			<li>文化生活</li>
+		</ul>
+	</div>
+	
+	<div id="right">
+		<div id="right_top">
+			<div id="inputBox">
+				<input type="text" placeholder="搜索关键词" />
+			</div>
+			<div id="icon1">
+				<img src="./img/icon1.png"/>
+				信息门户
+			</div>
+			<div id="icon2">
+				<img src="./img/icon2.png"/>
+				邮件系统
+			</div>
+			<div id="icon3">
+				<img src="./img/icon3.png"/>
+				办公系统
+			</div>
+		</div>
+		<div id="gap">
+		</div>
+		<div id="right_content">
+			<div id="content_inner">
+				<div id="head">
+				通知公告
+				</div>
+				<table>
+					<thead>
+						<tr>
+							<th>标题</th>
+							<th>发布单位</th>
+							<th>日期</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr><td>信息学部停电、停水告示</td><td> 后勤保障部</td><td>2016-10-201047</td></tr>
+						<tr><td>防空防灾警报试鸣公告</td><td> 
+						后勤保障部</td><td> 2016-10-20363</td></tr>
+						<tr><td>长江论坛第二讲预告</td><td> 
+						人文社会科学研究院</td><td> 2016-10-201622</td></tr>
+						<tr><td>考察对象公示</td><td> 
+						党委组织部</td><td> 2016-10-206066</td></tr>
+						<tr><td>关于消防安全培训相关事宜的说明</td><td> 
+						保卫部</td><td> 2016-10-20192</td></tr>
+						<tr><td>“国家治理现代化与公共政策创新”国际学术研讨会会议公告</td><td> 
+						政治与公共管理学院</td><td> 2016-10-191319</td></tr>
+						<tr><td>任职公告</td><td> 
+						党委组织部</td><td> 2016-10-1810259</td></tr>
+						<tr><td>珞珈讲坛第145讲预告</td><td> 
+						科学技术发展研究院</td><td> 2016-10-172352</td></tr>
+						<tr><td>信息学部停水通知</td><td> 
+						后勤保障部</td><td> 2016-10-17791</td></tr>
+						<tr><td>珞珈讲坛第147讲预告</td><td> 
+						人文社会科学研究院</td><td> 2016-10-173091</td></tr>
+						<tr><td>珞珈讲坛第146讲预告</td><td> 
+						人文社会科学研究院</td><td> 2016-10-172517</td></tr>
+						<tr><td>关于以竞争上岗方式选拔基础医学院院长的通知</td><td> 
+						党委组织部</td><td> 2016-10-133577</td></tr>
+						<tr><td>武汉大学推荐2016年“湖北名师工作室”候选项目公示</td><td> 
+						本科生院</td><td> 2016-10-132674</td></tr>
+						<tr><td>停水通知</td><td> 
+						后勤保障部</td><td> 2016-10-102196</td></tr>
+						<tr><td>珞珈讲坛第144讲预告</td><td> 
+						科学技术发展研究院</td><td> 2016-10-094547</td></tr>
+						<tr><td>信息学部停水通知</td><td> 
+						后勤保障部</td><td> 2016-10-081571</td></tr>
+						<tr><td>“典藏珞珈——王诚浩、溫庆武、袁诚、周秀梅、杨青纸上作品展”预告</td><td> 
+						党委宣传部 万林艺...</td><td> 2016-09-302352</td></tr>
+						<tr><td>创业论坛课程上课地点变更通知</td><td> 
+						教育发展基金工作...</td><td> 2016-09-30799</td></tr>
+						<tr><td>关于后勤保障部办公电话光纤改造的通知</td><td> 
+						后勤保障部</td><td> 2016-09-291202</td></tr>
+						<tr><td>“赤子之心——何纵校友油画展”预告</td><td> 
+						万林艺术博物馆</td><td> 2016-09-29867</td></tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+	</div>
+</div>
+</script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset ="utf-8"/>
+<title>学术动态</title>
+<style type="text/css">
+*{
+	margin:0px;
+	padding: 0px;
+	font-family: "微软雅黑";
+}
+html,body{
+	height: 100%;
+}
+.clear{
+	clear: both;
+}
+#wrapper{
+	width:100%;
+	float: right;
+	margin:0 0 0 -240px;
+}
+#left{
+	position: fixed;
+	width:240px;
+	background: none repeat scroll 0% 0% rgb(34, 34, 34);
+	float: left;
+	height: 100%;
+}
+#left_top{
+	text-align: center;
+	color: white;
+	font-size: 20px;
+}
+#logo{
+	width:160px;
+	height:160px;
+	margin:0px auto;
+	margin-top:50px;
+
+}
+#left ul{
+	width:240px;
+	color: white;
+	font-size: 18px;
+	margin-top: 30px;
+
+
+}
+#left li{
+	text-align: center;
+	list-style: none;
+	width:240px;
+	height:40px;
+	line-height: 40px;
+	border-bottom: 2px solid rgb(34, 34, 34);
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+#menu li{
+	list-style: none;
+	height: 40px;
+	line-height: 40px;
+	position: relative;
+	left:240px;
+	background: rgba(0,0,0,0.8);
+	top:-100px;
+	display: none;
+
+}
+#menu_fa:hover #menu li{
+	display: block;
+}
+#right{
+	margin-left: 240px;
+	background: #cccccc;
+	padding-bottom: 30px;
+}
+#right_top{
+	background: #698B22;
+	height:60px;
+	line-height: 60px;
+	position: fixed;
+	width: 100%;
+}
+#inputBox{
+	width:180px;
+	margin-left: 30%;
+	float: left;
+}
+#right_top input{
+	height:30px;
+	border-radius:6px;
+}
+#icon1,#icon2,#icon3{
+	margin-left: 3%;
+	float: left;
+	width:150px;
+	color: white;
+}
+#gap{
+	width:100%;
+	height: 30px;
+	padding-top: 60px;
+}
+#right_content{
+	width:80%;
+	background: white;
+	margin:0 auto;
+	margin-bottom: 30px;
+	border-radius: 5px;
+}
+#content_inner{
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+#head{
+	height: 50px;
+	width: 200px;
+	border-radius: 5px;
+	background: #698B22;
+	line-height: 50px;
+	text-align: center;
+	font-size: 24px;
+	color: white;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+#right_content table{
+		width: 100%;
+		margin:20px auto;
+	}
+#right_content table tr{
+		height: 40px;
+	}
+#right_content table tr td{
+		text-align: center;
+	}
+#right_content table tr td:first-child{
+		text-align: left;
+	}
+</style>
+</head>
+<body>
+<div id="wrapper">
+	<div id="left">
+		<div id="left_top">
+			<img src="./img/whu.png" id="logo" />
+			<p>武汉大学</p>
+			<p>WuHan University</p>
+		</div>
+		<ul>
+			<li id="menu_fa">
+				<a href="http://www.whu.edu.cn/xxgk/xxjj.htm">学校概况</a>
+				<ul  id="menu">
+					<li>学校简介</li>
+					<li>武大标示</li>
+					<li>武大百科</li>
+				</ul>
+
+			</li>
+			<li>机构设置</a></li>
+			<li>师资队伍</li>
+			<li>人才培养</li>
+			<li>科学研究</li>
+			<li>社会服务</li>
+			<li>交流合作</li>
+			<li>文化生活</li>
+		</ul>
+	</div>
+	
+	<div id="right">
+		<div id="right_top">
+			<div id="inputBox">
+				<input type="text" placeholder="搜索关键词" />
+			</div>
+			<div id="icon1">
+				<img src="./img/icon1.png"/>
+				信息门户
+			</div>
+			<div id="icon2">
+				<img src="./img/icon2.png"/>
+				邮件系统
+			</div>
+			<div id="icon3">
+				<img src="./img/icon3.png"/>
+				办公系统
+			</div>
+		</div>
+		<div id="gap">
+		</div>
+		<div id="right_content">
+			<div id="content_inner">
+				<div id="head">
+				学术动态
+				</div>
+				<table>
+					<thead>
+						<tr>
+							<th>标题</th>
+							<th>点击数</th>
+							<th>日期</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr><td>武大学者牵头探索蛋白质机器与生命过程调控</td><td>24</td><td>  2016-10-21</td> </tr>
+						<tr><td>狄墨•鲍尔茨获湖北省政府“编钟奖”</td><td>669</td><td>  2016-10-21</td> </tr> 
+						<tr><td>国内外知名专家共探临床医学前沿问题</td><td> 445</td><td>  2016-10-20</td> </tr> 
+						<tr><td>我校经济舆情研究工作获中宣部肯定</td><td> 320</td><td>  2016-10-20 </td> </tr>
+						<tr><td>李崇淮诞辰百年纪念暨学术思想研讨会召开</td><td>806</td><td>  2016-10-19 </td> </tr>
+						<tr><td>我校牵头国家通航低空监视新技术研究</td><td>750</td><td>  2016-10-19 </td> </tr>
+						<tr><td>国内外顶级专家共话微生物研究前沿和走向</td><td>1260 </td><td> 2016-10-19 </td> </tr>
+						<tr><td>院士专家共探现代农业与绿色发展</td><td>331</td><td>  2016-10-19 </td> </tr>
+						<tr><td>人民医院年度科技论文总数跃居全国医疗机构第三</td><td> 1499 </td><td> 2016-10-17 </td> </tr>
+						<tr><td>李龙获李步云法学奖</td><td> 1386</td><td>  2016-10-17</td> </tr> 
+						<tr><td>全球健康研究与政策国际研讨会在我校召开</td><td> 471</td><td>  2016-10-17 </td> </tr>
+						<tr><td>国际学者珞珈畅论边界海洋前沿问题</td><td> 760</td><td>  2016-10-14</td> </tr> 
+						<tr><td>李健教授无人机监管报告被国务院参事室采用</td><td>2400</td><td>  2016-10-13</td> </tr> 
+						<tr><td>武大学者获IEEE通信学会亚太区杰出青年研究学者奖</td><td>1676</td><td>  2016-10-13 </td> </tr>
+						<tr><td>学者聚焦原子光谱及相关技术 </td><td>937</td><td>  2016-10-10</td> </tr> 
+						<tr><td>构建亿级用户位置云服务平台</td><td>1074</td><td>  2016-10-10</td> </tr> 
+						<tr><td>高校师生共探Web信息系统应用发展 </td><td>594</td><td>  2016-10-09</td> </tr> 
+						<tr><td>国际可靠性系统及应用大会在我校召开</td><td>85</td><td>  2016-10-09</td> </tr>
+						<tr><td>网络空间治理国际法研讨会在我校举行</td><td>669</td><td>  2016-09-28</td> </tr> 
+						<tr><td>两岸专家研讨反恐对策及公共安全防控机制</td><td> 396</td><td> 2016-09-27</td> </tr> 
+						<tr><td>院士专家聚焦网络安全学科建设和人才培养</td><td> 584</td><td>  2016-09-27</td> </tr> 
+						<tr><td>国家语言文字智库频发力 </td><td>931 </td><td> 2016-09-23</td> </tr>
+						<tr><td>《细胞》子刊发表我校干细胞研究新成果</td><td> 1549</td><td>  2016-09-20 </td> </tr>
+						<tr><td>第十届全国分析哲学研讨会在汉举行</td><td> 926</td><td> 2016-09-18 </td> </tr>
+						<tr><td>院士专家研讨材料化学前沿问题</td><td> 1422</td><td>  2016-09-18 </td> </tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+	</div>
+</div>
+</script>
+</body>
+</html>
