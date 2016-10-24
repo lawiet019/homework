@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>武大标志</title>
+	<style type="text/css">
+	*{
+		margin:0px;
+		padding:0px;
+	}
+	.clear{
+		clear: both;
+	}
+	#wrapper{
+		width: 100%;
+	}
+	#topper{
+		width: 100%;
+		height: 60px;
+		line-height: 60px;
+		background: #214E1B;
+		position: fixed;
+		z-index: 10;
+	}
+	#topper>img{
+		float: left;
+		height: 50px;
+		width: 50px;
+		border-radius: 25px;
+		margin-top: 5px;
+		margin-left: 50px;
+	}
+	#topper ul{
+		float: right;
+	}
+	#topper ul li{
+		list-style: none;
+		display: inline-block;
+		margin-right: 30px;
+		color: white;
+	}
+	#banner{
+		width: 100%;
+		padding-top: 60px;
+	}
+	#imgList{
+		width: 100%;
+	}
+	#imgList li{
+		list-style: none;
+		width: 100%;
+	}
+
+	#imgList li img{
+		width: 100%;
+		height: 650px;
+		display: none;
+	}
+	.show{
+		display: block!important;
+	}
+	#textList {
+		position: absolute;
+		top: 60px;
+		width: 100%;
+	}
+	#textList li {
+		list-style: none;
+		width: 100%;
+	}
+	#textList li div{
+		width: 40%;
+		height: 650px;
+		background: rgba(0,0,0,0.7);
+		color: white;
+		text-align: center;
+		font-family: "楷体";
+		display: none;
+
+	}
+	#textList li div h3{
+		padding-top: 150px;
+		font-size: 100px;
+	}
+	#textList li div h5{
+		font-size: 20px;
+		padding-top: 50px;
+	}
+	#content{
+		width: 100%;
+		background: #cccccc;
+	}
+	#head{
+		width: 60%;
+		margin:0 auto;
+		height: 100px;
+		line-height: 100px;
+	}
+	#head_test{
+		float: left;
+		color: #698B22;
+		border-bottom: 2px solid #698B22;
+		font-size: 30px;
+	}
+	#head_other{
+		float: right;
+		border-bottom: 2px solid white;
+	}
+	.title{
+		font-size: 24px;
+		border-left: 5px solid #698B22;
+		width: 70%;
+		margin: 20px auto;
+		padding-left: 10px;
+	}
+	.center{
+		text-align: center;
+		font-size: 15px;
+	}
+	.img_box {
+		width: 100%;
+		margin:20px auto;
+		text-align: center;
+	}
+	.main_body{
+		width: 80%;
+		margin: 0 auto;
+		padding-top: 20px;
+		padding-bottom: 30px;
+	}
+	.main_body p{
+		line-height: 40px;
+		font-size: 20px;
+		margin-bottom: 30px;
+		margin:0 10px;
+		text-indent: 40px;
+	}
+	#bottom{
+		width: 100%;
+		height: 100px;
+		background:  #214E1B;
+		color: white;
+		font-size: 15px;
+	}
+	#bottom_left{
+		float: left;
+		width:49%;
+		padding-top: 20px;
+		padding-left: 1%;
+
+	}
+	#bottom_right{
+		float: right;
+		width: 50%;
+		padding-top: 30px;
+	}
+	#bottom_right span{
+		float: right;
+		display: inline-block;
+		margin-right: 10px;
+	}
+	#song{
+		text-decoration: none;
+	}
+	#song:hover{
+		text-decoration: underline;
+	}
+	</style>
+</head>
+<body>
+<div id="wrapper">
+	<div id="topper">
+		<img src="./img/whu.png"/>
+		<ul>
+			<li>
+				<img src="./img/icon1.png"/>
+				信息门户
+			</li>
+			<li>
+				<img src="./img/icon2.png"/>
+				邮件系统
+			</li>
+			<li>
+				<img src="./img/icon3.png"/>
+				办公系统
+			</li>
+		</ul>
+	</div>
+	<div id="banner">
+		<ul id="imgList">
+			<li><img src="./img/春.jpg" class="show" /></li>
+			<li><img src="./img/夏.jpg"/></li>
+			<li><img src="./img/秋.jpg"/></li>
+			<li><img src="./img/冬.jpg"/></li>
+		</ul>
+		<ul id="textList">
+			<li>
+				<div class="show">
+					<h3>春</h3>
+					<h5>————夜来风雨声，花落知多少</h5>
+				</div>
+			</li>
+			<li>
+				<div>
+					<h3>夏</h3>
+					<h5>————风老莺雏，雨肥梅子，午阴嘉树清圆</h5>
+				</div>
+			</li>
+			<li>
+				<div>
+					<h3>秋</h3>
+					<h5>————空山新雨后，天气晚来秋</h5>
+				</div>
+			</li>
+			<li>
+				<div>
+					<h3>冬</h3>
+					<h5>————晚来天欲雪，能饮一杯无</h5>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div id="content">
+		<div id="head">
+			<div id="head_test">
+			<em>武大标志</em>
+			</div>
+			<div id="head_other">
+			</div>
+			<div class="clear">
+			</div>
+		</div>
+		<div class="title">
+			校名
+		</div>
+		<div class="img_box">
+			<img src="./img/武大标识1.jpg"/>
+		</div>
+		<div class="main_body">	
+			<p>武汉大学溯源于1893年清末湖广总督张之洞奏请清政府创办的自强学堂，历经传承演变，1928年定名为国立武汉大学，是近代中国第一批国立大学。1949年新中国成立，学校更名为武汉大学。</p>
+		</div>
+		<div class="title">
+			校徽
+		</div>
+		<div class="img_box">
+			<img src="./img/武大标识2.png"/>
+		</div>
+		<div class="main_body">	
+			<p>现行武汉大学校徽为1993年庆祝百年校庆时设计的图案。校徽图式为圆形，上方为武汉大学英文校名，呈弧形，表达学校国际化办学理念和成为国际一流大学的奋斗目标与价值追求；中居学校老图书馆造形，表达学校独有地标特征和文化标志；中间下书阿拉伯数字“1893”，表明学校建校年代；下方为中文汉字毛体校名。</p>
+		</div>
+		<div class="title">
+			校训
+		</div>
+		<div class="img_box">
+			<img src="./img/武大标识3.png"/>
+		</div>
+		<p class="center">
+			陶德麟书写的武汉大学校训
+		</p>
+		<div class="main_body">	
+			　<p>1993年，在广泛征求各方面意见的基础上，经校务委员会审议，武汉大学新校训定为：自强 弘毅 求是 拓新。</p>
+
+		　　<p>“自强”语出《周易》“天行健、君子以自强不息”。意为自尊自重，不断自力图强，奋发向上。自强是中华民族的传统美德，成就事业当以此为训。我校最早前身为“自强学堂”，其名也取此意。</p>
+
+		　　<p>“弘毅”出自《论语》“士不可以不弘毅，任重而道远”一语。意谓抱负远大，坚强刚毅。我校30年代校训“明诚弘毅”就含此一词。</p>
+
+		　　<p>用“自强”、“弘毅”，既概括了上述含义，又体现了我校的历史纵深与校风延续。</p>
+
+		　　<p>“求是”即为博学求知，努力探索规律，追求真理。语出《汉书》“修学好古，实事求是”。</p>
+
+		　　<p>“拓新”，意为开拓、创新，不断进取。</p>
+
+		　　<p>概言之，我校新校训的整体含义是： 继承和发扬中华民族自强不息的伟大精神，树立为国家的繁荣昌盛刻苦学习、积极奉献的伟大志向，以坚毅刚强的品格和科学严谨的治学态度，努力探求事物发展的客观规律，开创新局面，取得新成绩，办好社会主义的武汉大学，不断为国家作出新贡献。</p>
+		</div>
+		<div class="title">
+		校歌
+		</div>
+		<div class="main_body">
+		 	<p><a id="song" href="./song.rar"/>点击下载武大校歌</a></p>
+			<p>现行武汉大学校歌为1998年所征集，陈望衡等作词，陈国权谱曲，歌词为：</p>
+
+		　　<p>东湖之滨，珞珈山上，</p>
+
+		　　<p>这是我们亲爱的学堂。</p>
+
+		　　<p>百年沧桑，弘毅自强，</p>
+
+		　　<p>根深叶茂育桃李，满园芬芳。</p>
+
+		　　<p>啊，美丽的珞珈山， 多少雄鹰竞翱翔。</p>
+
+		　　<p>扬帆长江，奔向海洋，</p>
+
+		　　<p>这是我们成长的地方。 德业并进，求是拓新，</p>
+
+		　　<p>大同寰宇向未来，我创辉煌。</p>
+
+		　　<p>啊，心中的珞珈山，</p>
+
+		　　<p>今朝多磨砺，明日作栋梁。</p>
+		</div>
+		<div class="title">
+			校庆日
+		</div>
+		<div class="img_box">
+			<img src="./img/武大标识4.png"/>
+		</div>
+		<p class="center">
+			湖广总督张之洞上奏《设立自强学堂片》，光绪帝朱批有“该衙门知道”的奏折
+		</p>
+		<div class="main_body">	
+			　<p>1893年11月29日，湖广总督张之洞向光绪帝上奏《设立自强学堂片》，并获得批准，自强学堂（武汉大学前身）正式创办。后来，学校将11月29日定为武汉大学的校庆日。</p>
+		</div>
+		<div class="title">
+			珞珈style宣传造型
+		</div>
+		<div class="img_box">
+			<img src="./img/武大标识5.png"/>
+		</div>
+		<div class="main_body">	
+			<p>　　“珞珈style”是武汉大学校庆年推出的文化项目之一。将武汉大学英文名首字母W、H、U，即W：追逐梦想，H：顶天立地，U：家是珞珈，借助肢体语言作进行创意演绎，直观生动地传播和表达珞珈情怀。为全球武大人在聚会等特别的日子、标志性人文景点等特别地点进行单人演绎或多人演绎提供范本，也欢迎您在此基础上自由创作。这是中国高校第一例官方发布的宣传造型，也是武大人共同的文化符号、心灵密码、精神纽带。</p>
+		</div>
+	</div>
+	<div id="bottom">
+		<div id="bottom_left">
+			<p>Copyright武汉大学2014　地址：湖北省武汉市武昌区八一路299号　邮编：430072</p>
+			<p>鄂ICP备05003330鄂公网安备42010602000219</p>
+		</div>
+		<div id="bottom_right">
+			<span>联系我们</span><span>网站地图</span><span>信息中心</span>
+		</div>
+	</div>
+</div>
+<script src="./jquery-2.2.1.min.js"></script>
+<script type="text/javascript">
+	
+	var curLength=0;
+	var length = $("#imgList").find("li").length;
+	var autoChange = setInterval(function(){
+		if(curLength==(length-1)){
+			curLength=0;
+		}
+		else{
+			curLength++;
+		}
+		changeDemo(curLength);
+
+	},6000)
+	function changeDemo(index){
+		$("#imgList").find("li").find("img").removeClass('show');
+		$("#imgList").find("li").eq(index).find("img").addClass('show');	
+		$("#textList").find("li").find("div").removeClass('show');
+		$("#textList").find("li").eq(index).find("div").addClass('show');	
+	}
+</script>
+</body>
+</html>
